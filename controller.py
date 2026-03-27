@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 # (c) 2018 Felix Fontein (@felixfontein) <felix@fontein.de>
 #
 # Written by Felix Fontein <felix@fontein.de>
@@ -18,6 +17,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Ansible.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import annotations
+
 import base64
 import codecs
 import logging
@@ -26,6 +27,7 @@ import re
 import ssl
 import sys
 import urllib
+import urllib.request
 
 from functools import partial
 

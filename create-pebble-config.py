@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 # (c) 2019 Felix Fontein (@felixfontein) <felix@fontein.de>
 #
 # Written by Felix Fontein <felix@fontein.de>
@@ -17,6 +16,8 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Ansible.  If not, see <http://www.gnu.org/licenses/>.
+
+from __future__ import annotations
 
 import json
 import socket
@@ -47,6 +48,7 @@ config = {
       "kid-6": "b10lLJs8l1GPIzsLP0s6pMt8O0XVGnfTaCeROxQM0BIt2XrJMDHJZBM5NuQmQJQH",
       "kid-7": "HjudV5qnbreN-n9WyFSH-t4HXuEx_XFen45zuxY-G1h6fr74V3cUM_dVlwQZBWmc",
     },
+    "caaIdentities": ["pebble.letsencrypt.org", "ca.example.com"],
     "domainBlocklist": ["blocked-domain.example"],
     "profiles": {
       "default": {
